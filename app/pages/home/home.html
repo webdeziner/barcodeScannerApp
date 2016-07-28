@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Barcode scanner</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+    <ion-card>
+        <ion-card-content>
+            <button primary block (click)="scan($event)">Scan barcode</button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>Result</ion-card-header>
+        <ion-card-content>
+            Barcode: {{barcodeData.text}}
+            Format: {{barcodeData.format}}
+        </ion-card-content>
+    </ion-card>
+</ion-content>
