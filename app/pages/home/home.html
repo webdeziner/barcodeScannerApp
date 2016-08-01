@@ -12,9 +12,9 @@
     </ion-card>
     <ion-card>
         <ion-card-header>Result</ion-card-header>
-        <ion-card-content>
-            Barcode: {{barcodeData.text}}
-            Format: {{barcodeData.format}}
+        <ion-card-content *ngIf="barcodeData">
+            <p>Barcode: {{barcodeData.text}}</p>
+            <p>Format: {{barcodeData.format}}</p>
         </ion-card-content>
     </ion-card>
 </ion-content>
